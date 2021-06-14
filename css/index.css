@@ -1,0 +1,510 @@
+body{
+    width:100%;
+    height:100%;
+    margin: 0px;
+}
+.w{
+    position: absolute;
+    top:100px;
+    left: 10px;
+    width:480px;
+    height:400px;
+    z-index: +5;
+}
+.main{
+    position: relative;
+    width:100%;
+    height:550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main video{
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width:100%; 
+    z-index: -1;
+}
+.main .search{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width:100%;
+    height:100px;
+    z-index: +2;
+    
+}
+.main .search .part{
+  width:80%;
+  height:80%;
+  float: right;
+  text-align: right;
+
+    
+}
+.main .search .part input{
+    width:20%;
+    height:30px;
+    border:2px solid forestgreen;
+    border-radius: 7px 13px 13px 13px;
+    margin-top:1%;
+    margin-right: 1%;
+    padding-left: 15px;
+}
+.main .search .part input:focus{
+    outline: none;
+}
+.main .search .part #btn{
+    width:70px;
+    height:30px;
+    border:1px solid #ddd;
+    border-radius: 7px 13px 13px 13px;
+    margin-top:1%;
+    margin-left: 1%;
+}
+.main .search .part #btn:hover{
+    color: forestgreen;
+    cursor: pointer;
+}
+.main .search .part .result{
+    display: none;
+    width:70%;
+    height:40%;
+    border:1px solid #ddd;
+    border-radius: 7px 13px 13px 13px;
+    margin-top:1%;
+    margin-left: 3%;
+}
+.parent_over{
+    width:100%;
+    height:200px;
+    position: absolute;
+    top:470px;
+    left: 0;
+    z-index: +3;
+}
+.parent_over .over{
+    
+    width:40%;
+    height:100%;
+    margin: 0px auto;
+    text-align: center;
+}
+.parent_over .over button{
+    width:150px;
+    height:40px;
+    border-radius: 7px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    border:3px solid white;
+}
+.parent_over .over button:hover{
+    background-color: rgb(115, 146, 115);
+    cursor: pointer;
+}
+.parent_over .over p{
+    background-color: rgba(180, 176, 176, 0.7);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(238, 238, 229);
+}
+.parent_over .over p span{
+    font-size: 35px;
+    color: forestgreen;
+   
+}
+.aboutus{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.aboutus .head{
+    width:100%;
+    height:60px;
+    overflow: hidden;
+    text-align: center;
+}
+.aboutus .head h2{
+    color: rgb(134, 131, 131);
+}
+
+.aboutus .photo{
+    width:30%;
+    height:250px;
+    overflow: hidden;
+    float: left;
+    margin-left: 4%;
+}
+
+.aboutus .photo img{
+    width:100%;
+    height:100%;
+    border-radius: 7px;
+}
+.aboutus .info{
+    position: relative;
+    width:50%;
+    height:250px;
+    overflow: hidden;
+    float: left;
+    margin-left: 4%;
+}
+.aboutus .info p{
+    opacity: .8;
+    width:80%;
+    text-align:justify;
+}
+.aboutus .info .more{
+    position: absolute;
+    right: 1px;
+    bottom: 10px;
+    z-index: +2;
+}
+/* ads ==============*/
+.ads{
+    width:100%;
+    height: 100px;
+}
+.products{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.products .head{  
+    width:100%;
+    height:80px;
+    overflow: hidden;
+    text-align: center;
+}
+.products .head h2{
+    color: rgb(134, 131, 131);
+}
+.products .main_part{
+    width:80%;
+    height: auto;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.products .main_part .part{
+    float: left;
+    width: 20%;
+    height: 150px;
+    overflow: hidden;
+    margin:10px;
+}
+.products .main_part .part img{
+    width: 100%;
+    height: 90%;
+    border-radius: 7px;
+    border:3px solid white;
+}
+.products .main_part .part p{}
+
+
+.couter_part{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+.couter_part .part{
+    position: relative;
+    width: 7%;
+    height: 100px;
+    float: left;
+    margin: 60px;
+}
+.couter_part .part img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 2px;
+    
+}
+.couter_part .part .count{
+    width: 80%;
+    height:50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(122, 120, 120);
+    z-index: +2;
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+.couter_part .part span{
+    position: absolute;
+    top:5px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(122, 120, 120);
+    z-index: +3;
+}
+
+.app{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.app .head{  
+    width:100%;
+    height:80px;
+    overflow: hidden;
+    text-align: center;
+}
+.app .head h2{
+    color: rgb(134, 131, 131);
+}
+.app .photo{
+    float: left;
+    width:40%;
+    height: 400px;
+    overflow: hidden;
+}
+.app .photo img{
+    width: 100%;
+    height: 100%;
+    
+}
+.app .why{
+    margin-left: 10%;
+    float: left;
+    width:40%;
+    height: 400px;
+    overflow: hidden;
+}
+.app .why p{
+    width:100%;
+    font-size: 15px;
+    color: #000000;
+    opacity: .7;
+    height: 50%;
+    overflow: hidden;
+    text-justify: kashida;
+    text-align: justify;
+
+}
+.app .why .our_app{
+    width:100%;
+    height: 30%;
+}
+.app .why .our_app #android{
+    width:42%;
+    height: 90px;
+    
+}
+.app .why .our_app #ios{
+    width:42%;
+    height:90px;
+}
+.inc{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.inc .head{  
+    width:100%;
+    height:80px;
+    overflow: hidden;
+    text-align: center;
+}
+.inc .head h2{
+    color: rgb(134, 131, 131);
+}
+.inc .r_photo{
+    width:80%;
+    height: auto;
+    margin: 0px auto;
+}
+.inc .r_photo img{
+    width:20%;
+    height: 100px;
+    margin-left: 1%;
+    margin-top: 5px;
+}
+/* contact us =================*/
+.contact{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.contact .head{  
+    width:100%;
+    height:80px;
+    overflow: hidden;
+    text-align: center;
+}
+.contact .head h2{
+    color: rgb(134, 131, 131);
+}
+.contact .anony_data{
+    float: left;
+    width:30%;
+    height: 400px;
+    margin-left: 15%;
+    overflow: hidden;
+
+}
+.contact .anony_data input{
+    padding-left: 15px;
+    width: 85%;
+    height: 30px;
+    color: black;
+    border:1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+.contact .anony_data input:focus{
+    outline: none;
+}
+.contact .anony_data textarea{
+    width: 85%;
+    height: 120px;
+    color: black;
+    border:1px solid #ddd;
+    border-radius: 7px;
+    padding-left: 15px;
+}
+.contact .anony_data textarea:focus{
+    outline: none;
+}
+.contact .anony_data button{
+    width: 80px;
+    height: 30px;
+    background-color: #ddd;
+    color: rgb(41, 40, 40);
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.contact .line{
+    float: left;
+    width:5px;
+    height:320px;
+    background-color: rgb(126, 123, 123);
+}
+.contact .info{
+    float: left;
+    width:40%;
+    height: 400px;
+    margin-left: 4%;
+    overflow: hidden;
+}
+.contact .info p{
+    font-size: 22px;
+    opacity: .8;
+}
+
+
+/* contact us =================*/
+
+
+/*  =======================*/
+.site_map{
+    width:100%;
+    height:300px;
+    background-color: rgb(31, 30, 30);
+}
+.site_map .head{
+    width:100%;
+    height:20%;
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+.site_map .head #logo{
+    float: left;
+    width:50px;
+    height: 50px;
+}
+.site_map .head .news{
+    float: left;
+    margin-left: 10%;
+    margin-top: 5px;
+    width:50%;
+    height:80%;
+    overflow: hidden;
+    background-color: rgb(20, 20, 20);
+    padding: 5px;
+
+}
+.site_map .head .news p{
+    float: left;
+    margin-right: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: -2px;
+}
+.site_map .head .news input{
+    width:60%;
+    height: 30px;
+    border:1px solid forestgreen;
+    border-radius: 7px;
+}
+.site_map .head .news button{
+    width:80px;
+    height: 35px;
+    background-color: forestgreen;
+    border:1px solid forestgreen;
+    border-radius: 7px;
+    color: white;
+}
+.site_map .head  #qr{
+    float: right;
+    width:50px;
+    height: 50px;
+    margin:3px;
+}
+
+
+
+
+.site_map .links{
+  float: left;
+    width:30%;
+    height:70%;
+}
+.site_map .links .ul{
+  
+    list-style-type: none;
+    width:100%;
+    height:100%;
+   text-align: center; 
+}
+.ul li{ 
+    
+    width:100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(248, 234, 234);
+  
+}
+.ul a{ 
+    
+    width:100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(248, 234, 234);
+  
+}
+ 
+.footer{
+    width:100%;
+    height:40px;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+   padding-top: 2px;
+}
+.footer p{
+    color: white;
+    margin-top: 5px;
+    
+}
+
+
+
+

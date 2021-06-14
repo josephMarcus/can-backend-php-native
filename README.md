@@ -1,2 +1,2 @@
-# can-backend-php-native
-marketplace php native code and ajax for product rating 
+# can-ui
+website for online store ui frontend

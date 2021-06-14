@@ -1,0 +1,94 @@
+body{
+    width:100%;
+    height: 100%;
+    margin: 0px;
+}
+/* start of login part */
+
+.parent_login{
+    width:100%;
+    height:500px;
+    overflow: hidden;
+   
+}
+
+.parent_login .login_part{
+    width:30%;
+    height:auto;
+    overflow: hidden;
+    margin:0px auto;
+    margin-top: 60px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    text-align: center;
+}
+.parent_login .login_part h1{
+    opacity: .7;
+}
+.parent_login .login_part input{
+    width:90%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding-left: 10px;
+    color:rgba(0, 0, 0,.7);
+}
+
+.parent_login .login_part button{
+    width:80px;
+    height: 35px;
+    background-color: darkblue;
+    color: white;
+    border:1px solid darkblue;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.parent_login .login_part button:hover{
+    background-color: white;
+    color: darkblue;
+    cursor: pointer;
+}
+.space{
+    width:100%;
+    height: 20px;
+}
+
+/* end of login part */
+
+
+/*  start of media q */
+
+@media only screen and (min-width:320px) and (max-width:420px){
+    .parent_login .login_part{
+       width: 98%;
+    }
+} 
+
+
+@media only screen and (min-width:421px) and (max-width:670px){
+    .parent_login .login_part{
+       width: 90%;
+    }
+} 
+
+
+
+@media only screen and (min-width:671px) and (max-width:720px){
+    .parent_login .login_part{
+       width: 80%;
+    }
+} 
+
+
+@media only screen and (min-width:721px) and (max-width:920px){
+    .parent_login .login_part{
+       width: 60%;
+    }
+} 
+
+
+
