@@ -56,14 +56,63 @@ include 'env.php';
     <div class="space"></div>
     <!--  start of search part  -->
     <div class="search">
-        <input type="search" placeholder="search here">
+    <form action="items.php" method="get">
+        <input type="search" name="c" placeholder="search here">
         <button>Search</button>
+        </form>
     </div>
     <!--  end of search part  -->
 
     <!-- start of parent items -->
     <div class="parent_items">
+        <?php
+        if(isset($_GET['c'])){
+            $word=$_GET['c'];
+            $sql="select * from items_page where item_name like '%$word%'";
+            $run=mysqli_query($con,$sql);
+            while($row=mysqli_fetch_assoc($run)){
+                $item_id=$row['item_id'];
+                $name=$row['item_name'];
+                $price=$row['price'];
+                $short=$row['short'];
+                $url=$row['url'];
+                ?>
+ <!-- item part -->
+ <div class="item_part">
+            <div class="added">
+                <p>Item Was Added Successfuly</p>
+                <p>unit:2</p>
+                <p>total : 5600.EGP</p>
+                <button>Continue to Checkout</button>
+                <button>Cancel Order</button>
+            </div>
+            <div class="i">
+                <input type="submit" class="btn dec" onclick="dec(this)" value="-">
+                <input type="submit" class="unit" value="1">
+                <input type="submit" class="btn inc" onclick="inc(this)" value="+">
+            </div>
+            <button class="cart_btn" onclick="run_counter(this)">Add to Cart</button>
+            <img src="<?php echo $url; ?>" alt="">
+            <p id="price">EGP.<?php echo $price; ?></p>
+            <p id="name"><?php echo $name; ?></p> 
+            <p id="short"><?php echo $short; ?></p>
+            <a href="<?php echo 'http://localhost/can/itemdetail.php?item='.$item_id; ?>">detail</a>
+
+            <div class="one">
+                <img src="images/star2.png" class="m_one" onclick="first(this)" alt="">
+                <img src="images/star2.png" class="m_two" onclick="second(this)" alt="">
+                <img src="images/star2.png" class="m_three" onclick="third(this)" alt="">
+                <img src="images/star2.png" class="m_fourth" onclick="fourth(this)" alt="">
+                <img src="images/star2.png" class="m_fifth" onclick="fifth(this)" alt="">
+            </div>
+
+        </div>
+        <!-- end item part -->
         <?php 
+            }
+        }else{
+
+        
         $sql="select * from items_page";
         $run=mysqli_query($con,$sql);
         while($row=mysqli_fetch_assoc($run)){
@@ -104,7 +153,10 @@ include 'env.php';
 
         </div>
         <!-- end item part -->
-<?php    } ?>
+<?php
+    } 
+}
+?>
     </div>
     <!-- start of parent items -->
 
